@@ -17,7 +17,7 @@ public class OrderController {
     //支付服务的地址
     public static final String PAYMENT_URL = "http://localhost:8001";
 
-    @Resource
+    @Resource  //这是Java里面的注解
     RestTemplate restTemplate;
 
     @GetMapping("/consumer/payment/create")
