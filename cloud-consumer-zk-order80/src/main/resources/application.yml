@@ -1,0 +1,11 @@
+server:
+  # 80表示注册到zookeeper服务器的订单消费者端口号
+  port: 80
+spring:
+  application:
+    # 服务别名---注册zookeeper到注册中心的名称
+    name: cloud-consumer-zk-order
+  cloud:
+    zookeeper:
+      # 默认localhost:2181，我是连接Linux上面的zookeeper
+      connect-string: 10.254.14.56:2181

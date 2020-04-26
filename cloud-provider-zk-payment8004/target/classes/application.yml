@@ -1,0 +1,11 @@
+server:
+  # 8004表示注册到zookeeper服务器的支付服务提供者端口号
+  port: 8004
+spring:
+  application:
+    # 服务别名---注册zookeeper到注册中心的名称
+    name: cloud-provider-zk-payment
+  cloud:
+    zookeeper:
+      # 默认localhost:2181，我是连接Linux上面的zookeeper
+      connect-string: 10.254.14.56:2181

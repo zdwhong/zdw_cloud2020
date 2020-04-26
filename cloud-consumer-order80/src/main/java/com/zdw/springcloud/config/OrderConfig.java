@@ -13,7 +13,7 @@ public class OrderConfig {
      * @return
      */
     @Bean
-    @LoadBalanced
+    //@LoadBalanced  //注释掉，使用自定义的Ribbon负载均衡算法
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
